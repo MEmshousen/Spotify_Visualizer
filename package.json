@@ -1,0 +1,30 @@
+
+{
+  "name": "spotify-visualizer",
+  "displayName": "Spotify Visualizer",
+  "description": "Visualize your Spotify music in VS Code",
+  "version": "1.0.0",
+  "publisher": "yourname",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["*"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "spotify-visualizer.show",
+        "title": "Spotify: Show Visualizer"
+      },
+      {
+        "command": "spotify-visualizer.login",
+        "title": "Spotify: Login"
+      }
+    ]
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "open": "^8.4.0"
+  }
+}
